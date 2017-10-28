@@ -5,7 +5,7 @@ const router = new express.Router();
 router.use(bodyParser.json());
 
 router.get('/', function stickerRouteBrowse(req, res) {
-    const renderData = { pageTitle: 'Browse', entry: 'browse' };
+    const renderData = { pageTitle: 'Browse!', entry: 'browse' };
     console.log('Render values: ', renderData);
     res.render('index', renderData);
 });
